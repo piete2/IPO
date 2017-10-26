@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="piete.ipo.numTelfSMS"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/telf1_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.99"
+        android:ems="10"
+        android:hint="Nº teléfono 1"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/telf2_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.99"
+        android:ems="10"
+        android:hint="Nº teléfono 2"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/telf3_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Nº teléfono 3"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/telf4_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Nº teléfono 4"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/telf5_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Nº teléfono 5"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/telf6_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Nº teléfono 6"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/guardar_telf_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Guardar"
+        android:onClick="guardarsms"/>
+</LinearLayout>
