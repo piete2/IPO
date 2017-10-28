@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="piete.ipo.numTelfSMS"
+    tools:context="piete.ipo.numerosTelefonoSOS"
     android:orientation="vertical">
 
 
@@ -15,12 +15,17 @@
         android:layout_weight="0.99"
         android:ems="10"
         android:hint="Nº teléfono 1"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:text="4" />
 
     <EditText
         android:id="@+id/telf2_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/telf3_sms"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="87dp"
         android:layout_weight="0.99"
         android:ems="10"
         android:hint="Nº teléfono 2"
@@ -30,6 +35,9 @@
         android:id="@+id/telf3_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/telf4_sms"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Nº teléfono 3"
@@ -39,6 +47,9 @@
         android:id="@+id/telf4_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/telf5_sms"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Nº teléfono 4"
@@ -48,6 +59,9 @@
         android:id="@+id/telf5_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/telf6_sms"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Nº teléfono 5"
@@ -57,6 +71,9 @@
         android:id="@+id/telf6_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/guardar_telf_sms"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Nº teléfono 6"
@@ -66,7 +83,11 @@
         android:id="@+id/guardar_telf_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
         android:layout_weight="1"
-        android:text="Guardar"
-        android:onClick="guardarsms"/>
-</LinearLayout>
+        android:onClick="guardar"
+        android:text="Guardar" />
+</RelativeLayout>

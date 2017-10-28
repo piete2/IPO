@@ -30,7 +30,7 @@
             android:name=".A"
             android:label="@string/title_activity_a" />
         <activity android:name=".Emergencia" />
-        <activity android:name=".numTelfSMS" />
+        <activity android:name=".numerosTelefonoSOS"></activity>
     </application>
 
 </manifest>

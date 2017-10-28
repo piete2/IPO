@@ -19,7 +19,8 @@
         android:textSize="180sp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp"
-        android:onClick="enviarSMS"/>
+        android:onClick="enviarSMS"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/ajustesSos"
@@ -28,6 +29,5 @@
         android:text="Ajustes"
         tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="1000dp"
-        android:onClick="ajustesSos"
-        />
+        android:onClick="ajusteSos"/>
 </TableLayout>
