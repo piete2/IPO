@@ -2,7 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="piete.ipo">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!--<uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"></uses-permission>-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+
 
     <uses-feature android:name="android.hardware.camera2" />
 
@@ -14,7 +21,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Gentlemen"
+        android:label="Launcher 4 Senior"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -26,11 +33,9 @@
                 <category android:name="android.intent.category.HOME" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".A"
-            android:label="@string/title_activity_a" />
         <activity android:name=".Emergencia" />
-        <activity android:name=".numerosTelefonoSOS"></activity>
+        <activity android:name=".numerosTelefonoSOS" />
+        <activity android:name=".AccesosDirectos"></activity>
     </application>
 
 </manifest>

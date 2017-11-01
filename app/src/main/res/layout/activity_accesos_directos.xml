@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="piete.ipo.AccesosDirectos">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
+            android:onClick="wifi"
+            android:text="wifi" />
+
+        <Button
+            android:id="@+id/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/wifi"
+            android:layout_marginEnd="73dp"
+            android:layout_marginRight="73dp"
+            android:onClick="blue"
+            android:text="blue" />
+
+        <ToggleButton
+            android:id="@+id/Wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/wifi"
+            android:layout_alignStart="@+id/wifi"
+            android:layout_below="@+id/wifi"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="68dp"
+            android:text="Wifi"
+            android:textOff="Wifi OFF"
+            android:textOn="Wifi ON"
+            android:onClick="wifi"
+            android:checked="true"/>
+
+        <ToggleButton
+            android:id="@+id/bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Wifi"
+            android:layout_alignEnd="@+id/blue"
+            android:layout_alignRight="@+id/blue"
+            android:text="Blue"
+            android:textOff="Blue On"
+            android:textOn="Blue off" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

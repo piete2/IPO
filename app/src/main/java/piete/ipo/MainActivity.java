@@ -33,6 +33,11 @@ public void k(View v){
     startActivity(guardar);
 }
 
+    public void j(View v){
+        Intent guardar = new Intent(getApplicationContext(), AccesosDirectos.class);
+        startActivity(guardar);
+    }
+
 }
 
 
