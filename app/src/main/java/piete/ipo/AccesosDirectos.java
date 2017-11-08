@@ -1,10 +1,17 @@
 package piete.ipo;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Camera;
+import android.hardware.camera2.CameraAccessException;
+import android.hardware.camera2.CameraDevice;
+import android.hardware.camera2.CameraManager;
 import android.net.wifi.WifiManager;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,12 +28,19 @@ public class AccesosDirectos extends AppCompatActivity {
     //private Button boton;
     BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
     WifiManager wm;
-    Button bb,bw;
+    Button bb,bw,bl;
+    private boolean isLighOn = false;
 
+    private CameraManager mCameraManager;
+
+    //final android.hardware.Camera.Parameters p ;
     private WifiManager wifiManager;
 
 
     boolean btsoportado;
+    private String mCameraId;
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +53,12 @@ public class AccesosDirectos extends AppCompatActivity {
             btsoportado=false;
             Toast toast1 =Toast.makeText(getApplicationContext(),"Bluetooth no soportado ", Toast.LENGTH_SHORT);
             toast1.show();
+        }
+
+        try {
+            mCameraId = mCameraManager.getCameraIdList()[0];
+        } catch (CameraAccessException e) {
+            e.printStackTrace();
         }
 
 
@@ -63,18 +83,40 @@ public class AccesosDirectos extends AppCompatActivity {
         }
     }
 
-    public void wifi(View view) {
+    public void wifi(View view){
+        if (isLighOn) {
+            turnOnFlashLight();
 
-        if(WifiManager.WIFI_STATE_ENABLED!=3){
-            Toast toast1 = Toast.makeText(getApplicationContext(), "WIFI APAGADO ", Toast.LENGTH_SHORT);
-            toast1.show();
-            wifiManager.setWifiEnabled(false);
-        }else{
-            Toast toast1 = Toast.makeText(getApplicationContext(), "WIFI ENCENDIDO ", Toast.LENGTH_SHORT);
-            toast1.show();
-            wifiManager.setWifiEnabled(true);
+        } else {
+            turnOffFlashLight();
         }
-
     }
+
+    public void turnOnFlashLight() {
+
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                mCameraManager.setTorchMode(mCameraId, true);
+                //playOnOffSound();
+                //mTorchOnOffButton.setImageResource(R.drawable.on);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void turnOffFlashLight() {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                mCameraManager.setTorchMode(mCameraId, false);
+                //playOnOffSound();
+                //mTorchOnOffButton.setImageResource(R.drawable.on);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }
 
