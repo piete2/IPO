@@ -60,5 +60,15 @@
         android:text="Button"
         android:onClick="j"/>
 
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginBottom="26dp"
+        android:textSize="40sp" />
+
 </RelativeLayout>
 

@@ -6,10 +6,9 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-    <!--<uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"></uses-permission>-->
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
-
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"></uses-permission> -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     <uses-feature android:name="android.hardware.camera2" />
 
@@ -25,7 +24,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,9 +34,18 @@
                 <category android:name="android.intent.category.HOME" />
             </intent-filter>
         </activity>
-        <activity android:name=".Emergencia" />
-        <activity android:name=".numerosTelefonoSOS" />
-        <activity android:name=".AccesosDirectos"></activity>
+        <activity
+            android:name=".Emergencia"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".numerosTelefonoSOS"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- Pantalla completa -->
+        <activity
+            android:name=".AccesosDirectos"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".tutorial"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

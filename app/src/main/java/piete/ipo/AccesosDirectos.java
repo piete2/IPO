@@ -55,12 +55,6 @@ public class AccesosDirectos extends AppCompatActivity {
             toast1.show();
         }
 
-        try {
-            mCameraId = mCameraManager.getCameraIdList()[0];
-        } catch (CameraAccessException e) {
-            e.printStackTrace();
-        }
-
 
     }
 
@@ -83,39 +77,12 @@ public class AccesosDirectos extends AppCompatActivity {
         }
     }
 
-    public void wifi(View view){
-        if (isLighOn) {
-            turnOnFlashLight();
+   /* public void wifi(View view){
+        Intent intent = new Intent(Intent.ACTION_CO);
+        startActivity(intent);
+    }*/
 
-        } else {
-            turnOffFlashLight();
-        }
-    }
 
-    public void turnOnFlashLight() {
-
-        try {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                mCameraManager.setTorchMode(mCameraId, true);
-                //playOnOffSound();
-                //mTorchOnOffButton.setImageResource(R.drawable.on);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void turnOffFlashLight() {
-        try {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                mCameraManager.setTorchMode(mCameraId, false);
-                //playOnOffSound();
-                //mTorchOnOffButton.setImageResource(R.drawable.on);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
 
 }

@@ -9,25 +9,20 @@
     android:baselineAligned="false">
 
     <Button
-        android:id="@+id/sos"
-        android:layout_width="match_parent"
-        android:layout_height="388dp"
-        android:background="@android:color/holo_red_dark"
-        android:gravity="center"
-        android:text="SOS"
-        android:textColor="@android:color/white"
-        android:textSize="180sp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
-        android:onClick="enviarSMS"
-        tools:ignore="OnClick" />
-
-    <Button
         android:id="@+id/ajustesSos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="ajusteSos"
         android:text="Ajustes"
         tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="1000dp"
-        android:onClick="ajusteSos"/>
+        tools:layout_editor_absoluteY="1000dp" />
+
+    <ImageButton
+        android:id="@+id/sos"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@mipmap/sos"
+        android:contentDescription="TODO"
+        android:onClick="enviarSMS" />
+
 </TableLayout>

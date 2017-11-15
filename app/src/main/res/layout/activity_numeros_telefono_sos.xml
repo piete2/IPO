@@ -16,78 +16,94 @@
         android:ems="10"
         android:hint="Nº teléfono 1"
         android:inputType="phone"
-        android:text="4" />
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/telf2_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/telf3_sms"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="87dp"
+        android:layout_below="@+id/telf1_sms"
+        android:layout_marginTop="21dp"
         android:layout_weight="0.99"
         android:ems="10"
         android:hint="Nº teléfono 2"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:textColorHint="@android:color/black"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/telf3_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/telf4_sms"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/telf2_sms"
+        android:layout_marginTop="26dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Nº teléfono 3"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:textColorHint="@android:color/black"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/telf4_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/telf5_sms"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/telf3_sms"
+        android:layout_marginTop="30dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Nº teléfono 4"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:textColorHint="@android:color/black"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/telf5_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/telf6_sms"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/telf4_sms"
+        android:layout_marginTop="33dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Nº teléfono 5"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:textColorHint="@android:color/black"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/telf6_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/guardar_telf_sms"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/telf5_sms"
+        android:layout_marginTop="29dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Nº teléfono 6"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:textColorHint="@android:color/black"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/guardar_telf_sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="14dp"
+        android:layout_below="@+id/telf6_sms"
         android:layout_weight="1"
         android:onClick="guardar"
-        android:text="Guardar" />
+        android:text="Guardar"
+        android:textSize="24sp" />
 </RelativeLayout>
