@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="piete.ipo.Emergencia"
-    android:baselineAligned="false">
+    android:baselineAligned="false"
+   >
 
     <Button
         android:id="@+id/ajustesSos"

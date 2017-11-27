@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void k(View v) {
+    public void emergencia(View v) {
         Intent guardar = new Intent(getApplicationContext(), Emergencia.class);
         startActivity(guardar);
     }

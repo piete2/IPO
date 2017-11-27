@@ -23,10 +23,10 @@
         android:label="Launcher 4 Senior"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:label="Incio">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,19 +36,26 @@
         </activity>
         <activity
             android:name=".Emergencia"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:label="Emergencia" />
         <activity
             android:name=".numerosTelefonoSOS"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- Pantalla completa -->
+            android:label="Ajustes" />
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" />  Pantalla completa -->
         <activity
             android:name=".AccesosDirectos"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:label="Accesos Directos" />
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> -->
         <activity
             android:name=".tutorial"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:label="Tutorial" />
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" -->
         <activity
             android:name=".contactos"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:label="Contactos" />
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" -->
+        <activity android:name=".opciones"
+            android:label="Configuración"
+            />
     </application>
 
 </manifest>
