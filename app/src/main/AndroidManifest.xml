@@ -53,9 +53,14 @@
             android:name=".contactos"
             android:label="Contactos" />
         <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" -->
-        <activity android:name=".opciones"
-            android:label="Configuración"
-            />
+        <activity
+            android:name=".opciones"
+            android:label="Configuración" />
+        <activity android:name=".sonido" />
+        <activity
+            android:name=".apps"
+            android:label="Aplicaciones" />
+        <activity android:name=".App2"></activity>
     </application>
 
 </manifest>
