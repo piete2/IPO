@@ -39,7 +39,7 @@
             android:label="Emergencia" />
         <activity
             android:name=".numerosTelefonoSOS"
-            android:label="Ajustes" />
+            android:label="Ajustes emergencia" />
         <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" />  Pantalla completa -->
         <activity
             android:name=".AccesosDirectos"
@@ -60,7 +60,11 @@
         <activity
             android:name=".apps"
             android:label="Aplicaciones" />
-        <activity android:name=".App2"></activity>
+        <activity
+            android:name=".App2"
+            android:label="Aplicaciones" />
+        <activity android:name=".inicioL" />
+        <activity android:name=".item"></activity>
     </application>
 
 </manifest>

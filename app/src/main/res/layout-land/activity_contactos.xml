@@ -25,16 +25,20 @@
             android:id="@+id/imageView"
             android:layout_width="344dp"
             android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/searchView"
-            android:layout_centerHorizontal="true"
             app:srcCompat="@mipmap/contacts_22705" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_toEndOf="@+id/button4"
+            android:layout_toRightOf="@+id/button4"
             android:text="Nombre"
             android:textColor="@android:color/black"
             android:textSize="35sp"
@@ -44,20 +48,20 @@
             android:id="@+id/button"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_alignLeft="@+id/imageView"
-            android:layout_alignStart="@+id/imageView"
-            android:layout_below="@+id/textView"
-            android:layout_marginTop="44dp"
+            android:layout_alignLeft="@+id/contacto"
+            android:layout_alignStart="@+id/contacto"
+            android:layout_below="@+id/contacto"
             android:background="@mipmap/llamada2" />
 
         <Button
             android:id="@+id/contacto"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_alignEnd="@+id/searchView"
-            android:layout_alignRight="@+id/searchView"
-            android:layout_below="@+id/textView"
-            android:layout_marginTop="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
             android:background="@mipmap/adduser" />
 
         <Button

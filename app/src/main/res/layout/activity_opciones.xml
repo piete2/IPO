@@ -21,67 +21,78 @@
                 android:id="@+id/Sonido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sonido" />
+                android:text="Sonido"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/Imagen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Imagen" />
+                android:text="Imagen"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/pantalla"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tamaño_pantalla" />
+                android:text="Tamaño_pantalla"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Batería" />
+                android:text="Batería"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Contactos Emergencias" />
+                android:text="Contactos Emergencias"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Wi-Fi" />
+                android:text="Wi-Fi"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bluetooth" />
+                android:text="Bluetooth"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Aplicaciones" />
+                android:text="Aplicaciones"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Seguridad" />
+                android:text="Seguridad"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fecha y hora" />
+                android:text="Fecha y hora"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Información del teléfono" />
+                android:text="Información del teléfono"
+                android:textSize="24sp" />
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
